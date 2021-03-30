@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menue-bar styling */
+
+#logo {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.3rem;
+  border-radius: 50%;
+  background-color: unset;
+}
+
+.dvs {
+  position: absolute;
+  left: 60%;
+  top: 1.1rem;
+}
+.dvs a {
+  padding: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #ecf0f1;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.1vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dvs a:hover {
+  background-color: #c0392b;
+  border-radius: 2.5rem;
+}
+div .social {
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+}
+
+#facebook {
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 14rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+#instagram {
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 22rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+
+#twiter {
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 18rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+#youtube {
+  position: relative;
+  top: 1.2rem;
+  margin-left: 26rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+
+span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  color: #ecf0f1;
+}
+
+p {
+  position: absolute;
+  top: 1.1rem;
+  left: 4rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #ecf0f1;
+  font-weight: 700;
+}
+
+.menue {
+  position: absolute;
+  margin: 0 auto 0;
+  width: 100%;
+  height: 3.5rem;
+
+  max-width: 100%;
+}
+
+/* Styling the Main-menue Image */
+img {
+  max-width: 100%;
+  height: 87.2vh;
+  width: 100%;
+}
+
+.ta {
+  top: 40vh;
+  left: 42.5vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-size: 60px;
+  letter-spacing: 0.2vw;
+}
+.title {
+  position: absolute;
+  top: 54vh;
+  left: 42.5vw;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-size: 31px;
+  letter-spacing: 0.1vw;
+  color: whitesmoke;
+}
+/* Styling-side-bar-menue */
+
+.main-nav {
+  position: fixed;
+  top: 75px;
+  right: 65px;
+  z-index: 10;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.toggle-btn div {
+  height: 4px;
+  width: 25px;
+  background-color: #ecf0f1;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn div::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 4px;
+  width: 40px;
+  background-color: #ecf0f1;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn div::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  height: 4px;
+  width: 40px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-btn.open div {
+  background-color: transparent;
+}
+
+.toggle-btn.open div::before {
+  transform: rotate(405deg) translateY(4px);
+}
+
+.toggle-btn.open div::after {
+  transform: rotate(-405deg) translate(20px, -4px);
+}
+
+/* Styling the main header class */
+
+.main-header {
+  position: absolute;
+  background-color: transparent;
+  width: 10px;
+  min-height: 82.8vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  z-index: 10;
+  top: 9vh;
+}
+
+.main-header.open {
+  width: 293px;
+}
+
+.main-header.open ul {
+  opacity: 1;
+  z-index: 10;
+  pointer-events: all;
+}
+
+.main-header ul {
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+}
+
+/* Styling imgs inside side- bar */
+.auto {
+  width: 19vw;
+  height: 25vh;
+  transform: skewX(0deg);
+  transition: all 0.5s;
+}
+.auto:hover {
+  transform: skewX(1deg) scale(1.2);
+  box-shadow: 0 3rem 8rem 2rem rgba(0, 0, 0, 0.15);
+}
+.car {
+  margin-top: 1vh;
+}
+
+.cruise {
+  width: 19vw;
+  height: 25vh;
+  margin-top: 1vh;
+  transform: skewX(0deg);
+  transition: all 0.5s;
+}
+.cruise:hover {
+  transform: skewX(1deg) scale(1.2);
+  box-shadow: 0 3rem 8rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.restaurant {
+  width: 19vw;
+  height: 25vh;
+  transform: skewX(0deg);
+  transition: all 0.5s;
+}
+.restaurant:hover {
+  transform: skewX(1deg) scale(1.2);
+  box-shadow: 0 3rem 8rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+#cars h4 {
+  position: absolute;
+  top: 62vh;
+  margin-left: 20vw;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: white;
+}
+
+#desc {
+  position: absolute;
+  top: 66vh;
+  margin-left: 16vw;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  margin-top: 2vh;
+  background-color: white;
+}
+
+#boat h3 {
+  position: absolute;
+  top: 36vh;
+  margin-left: 20vw;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: white;
+}
+
+#desc3 {
+  position: absolute;
+  top: 38vh;
+  margin-left: 16vw;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  margin-top: 3vh;
+  background-color: white;
+}
+
+#meal h3 {
+  position: absolute;
+  top: 10vh;
+  margin-left: 20vw;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: white;
+}
+
+#desc4 {
+  position: absolute;
+  top: 12vh;
+  margin-left: 16vw;
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  background-color: white;
+  margin-top: 3vh;
+}
+
+#cars {
+  visibility: hidden;
+}
+
+#boat {
+  visibility: hidden;
+}
+
+#meal {
+  visibility: hidden;
+}
+
+/* Body Para styling */
+.intro h2 {
+  position: absolute;
+  margin-left: 35vw;
+}
+
+.intro h4 {
+  position: absolute;
+  margin-top: 4vh;
+  font-size: 18px;
+  margin-left: 3vw;
+}
+
+/* Footer syling */
+#foot {
+  position: absolute;
+
+  width: 100%;
+}
+
+#cop {
+  left: 88vw;
+  color: dimgray;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6vh;
+}
+
+/* Animated bar styling */
+.sideBar {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+
+  width: 60%;
+  background-color: #ff3838;
+  animation: line1 15s linear infinite;
+  height: 6vh;
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.sideBar p {
+  font-size: 20px;
+  margin-left: 5.5rem;
+  margin-top: 0.5rem;
+  color: #ecf0f1;
+  font-size: 22px;
+}
+/*End of animated bar styling  */

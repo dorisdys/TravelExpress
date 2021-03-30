@@ -1,0 +1,62 @@
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../css/package.css')
+  title Reservation
+
+section.menue
+  img#logo(src='../images/logo6.png' alt='')
+  p
+    span L
+    | ets
+    span G
+    | o
+  a(href='https://touch.facebook.com/' target='_blank')
+    i#facebook.fab.fa-facebook
+  a(href='https://www.instagram.com/accounts/login/' target='_blank')
+    i#instagram.fab.fa-instagram-square
+  a(href='https://twitter.com/LOGIN' target='_blank')
+    i#twiter.fab.fa-twitter
+  a(href='https://www.youtube.com/?hl=fr&gl=CA' target='_blank')
+    i#youtube.fab.fa-youtube
+  .dvs
+    a#contact(href='/') Home
+    a#gal(href='/destination') Destinations
+    a#register(href='/overview') Booking
+    a#register(href='/contact') Contact
+    a(href='/about') About
+.form-info
+  h1 Online Booking
+  h5 Please fill out the information below to complete your online reservation.
+  form(action='/reservation' method='post')
+    label(for='fname') First Name
+    input#firstname(type='text' name='firstname')
+    label(for='lname') Last Name
+    input#lastname(type='text' name='lastname')
+    label(for='email') Email
+    input#email(type='text' name='email')
+    label(for='phonenumber') Phone Number
+    input#phonenumber(type='text' name='phonenumber')
+    label(for='packageoption') Package Option
+    select#packageoption(name='packageoption')
+      option(value='australia')  
+      option(value='australia') MOROCCO FUNFAIR
+      option(value='MOROCCO FUNFAIR') MEXICO PARADISE
+      option(value='JAMAICA JAMBOREE') JAMAICA JAMBOREE
+      option(value='EGYPT SUNSET') EGYPT SUNSET
+      option(value='COLUMBIA MYSTERY') COLUMBIA MYSTERY
+      option(value='AMAZING ASIA') AMAZING ASIA
+    label(for='reservationid') ReservationID
+    input#reservationid(type='text' name='reservationid')
+    label(for='agent') Agent
+    select#agent(name='agent')
+      option(value='australia')   
+      option(value='Richard Lary') Richard Lary
+      option(value='Scote Yu') Scote Yu
+    input(type='submit' value='Submit')
+footer#foot
+  p#cop
+    i.far.fa-copyright
+    |   Copyright LetsGo 2021

@@ -1,0 +1,126 @@
+//Developed and designed by Youness
+doctype html
+
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/css/index.css')
+  script(src='https://kit.fontawesome.com/d33a4677ad.js' crossorigin='anonymous')
+  title Main-Menue
+  script.
+    function removeAll()
+    {
+    document.getElementById('meal').style.visibility = 'hidden';
+    document.getElementById('boat').style.visibility = 'hidden';
+    document.getElementById('cars').style.visibility = 'hidden';
+    }
+    function hoVerboat()
+    {
+    document.getElementById('meal').style.visibility = 'hidden';
+    document.getElementById('boat').style.visibility = 'visible';
+    document.getElementById('cars').style.visibility = 'hidden';
+    }
+    function hoVercars()
+    {
+    document.getElementById('meal').style.visibility = 'hidden';
+    document.getElementById('boat').style.visibility = 'hidden';
+    document.getElementById('cars').style.visibility = 'visible';
+    }
+    function hoVermeal()
+    {
+    document.getElementById('meal').style.visibility = 'visible';
+    document.getElementById('boat').style.visibility = 'hidden';
+    document.getElementById('cars').style.visibility = 'hidden';
+    }
+// Menue-Bar
+section.menue
+  img#logo(src='/images/logo6.png' alt='')
+  p
+    span L
+    | ets
+    span G
+    | o
+  a(href='https://touch.facebook.com/' target='_blank')
+    i#facebook.fab.fa-facebook
+  a(href='https://www.instagram.com/accounts/login/' target='_blank')
+    i#instagram.fab.fa-instagram-square
+  a(href='https://twitter.com/LOGIN' target='_blank')
+    i#twiter.fab.fa-twitter
+  a(href='https://www.youtube.com/?hl=fr&gl=CA' target='_blank')
+    i#youtube.fab.fa-youtube
+  .dvs
+    a#contact(href='/') Home
+    a#gal(href='/destination') Destinations
+    a#gal(href='/overview') Booking 
+    a#register(href='/contact') Contact
+    a(href='/about') About
+// End of Menue-Bar
+// Main-menue-Img
+img(src='/images/main-img.jpg' alt='vacation')
+p.ta Travel Agency
+h1.title We are the architects of unforgettable experiences
+// End-Main-menue-Img
+// Navigation-bar
+nav.main-nav
+  .toggle-btn
+    div
+// Side-Bar-Menue
+header.main-header
+  ul
+    li
+      img.restaurant(src='/images/restaurant.jpg' alt='' onmouseover='hoVermeal()' onmouseout='removeAll()')
+    li
+      img.cruise(src='/images/cruise.jpg' alt='' onmouseover='hoVerboat()' onmouseout='removeAll()')
+    li.car
+      img.auto(src='/images/auto.jpg' alt='' onmouseover='hoVercars()' onmouseout='removeAll()')
+.overlay
+// Partners description
+#cars
+  h4 Luxury Cars
+  p#desc
+    | Relax on the road with a luxury 
+    br
+    |  rental car include leather seats, 
+    br
+    |  6-8 cylinder performance and 
+    br
+    |  plenty of room for passengers 
+    br
+    |  and luggage.
+#boat
+  h3 Cruise travel
+  p#desc3
+    | Designed for those who delight
+    br
+    |  in the   thrill  of  discovery while 
+    br
+    | indulging mind  and body  in 
+    br
+    | the most lavish surrounding 
+    br
+    |  imaginable of your travel journey
+#meal
+  h3 Food &amp; Drinks
+  p#desc4
+    | Get ready to eat, drink from 
+    br
+    |  the famous cuisine of each 
+    br
+    |  destination, LetsGo is a 
+    br
+    |  playground  of culture 
+    br
+    |  and cuisine
+// Styling-Cointainers
+// Budy Paragraph
+.intro
+  h2 We&rsquo;re excited to be part of your travel experience
+  h4
+    | We offer everything from airfare to visa and accommodations, excursions, guided tours, special event assistance, special occasion service setups like honeymoons, and lengthy and complex, or often multi-destination.
+footer#foot
+  p#cop
+    | 
+    i.far.fa-copyright
+    |   Copyright LetsGo 2021
+  script(src='/js/index.js')

@@ -1,0 +1,118 @@
+<!-- This form is developed and designed by Youness DIMNA -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/d33a4677ad.js" crossorigin="anonymous"></script>
+    <title>Main-Menue</title>
+
+    <script>
+    
+     function removeAll()
+              {
+                document.getElementById('meal').style.visibility = 'hidden';  
+                document.getElementById('boat').style.visibility = 'hidden';
+                document.getElementById('cars').style.visibility = 'hidden';                       
+              }
+
+              function hoVerboat()
+              {
+                document.getElementById('meal').style.visibility = 'hidden';  
+                document.getElementById('boat').style.visibility = 'visible';
+                document.getElementById('cars').style.visibility = 'hidden';                       
+              }
+              function hoVercars()
+              {
+                document.getElementById('meal').style.visibility = 'hidden';  
+                document.getElementById('boat').style.visibility = 'hidden';
+                document.getElementById('cars').style.visibility = 'visible';                       
+              }
+
+          
+      function hoVermeal()
+              {
+                document.getElementById('meal').style.visibility = 'visible';  
+                document.getElementById('boat').style.visibility = 'hidden';
+                document.getElementById('cars').style.visibility = 'hidden';                       
+              }
+    </script>
+</head>
+<body>
+    
+    <body>
+         <!--Menue-Bar -->
+              <section class="menue">
+               
+                 <img id="logo" src="/images/logo6.png" alt="">
+                   <p><span>L</span>ets<span>G</span>o</p>
+                     <a href="https://touch.facebook.com/" target="_blank"><i id="facebook" class="fab fa-facebook"></i></a>
+                       <a href="https://www.instagram.com/accounts/login/" target="_blank"><i id="instagram" class="fab fa-instagram-square"></i></a>
+                           <a href="https://twitter.com/LOGIN" target="_blank"><i id="twiter" class="fab fa-twitter"></i></a>
+                               <a href="https://www.youtube.com/?hl=fr&gl=CA" target="_blank"><i id="youtube" class="fab fa-youtube"></i></a>           
+                   <div class="dvs">                      
+                            <a id="contact" href="/html/index.html">Home</a>
+                            <a id="gal" href="/html/destination.html">Destinations</a>
+                            <a id="gal" href="localhost">Booking</a>                       
+                            <a id="register" href="/html/contact.html">Contact</a>
+                            <a href="/html/about.html">About</a>
+                   </div>
+              </section >
+        <!--End of Menue-Bar -->
+
+                <!-- Main-menue-Img -->
+                    <img src="/images/main-img.jpg" alt="vacation">
+                    <p class="ta">Travel Agency</p>
+                    <h1 class="title">We are the architects of unforgettable experiences</h1>
+                <!--End-Main-menue-Img -->
+
+<!-- Navigation-bar -->
+  <nav class="main-nav">
+     <div class="toggle-btn">
+       <div></div>
+     </div>
+  </nav>
+
+<!-- Side-Bar-Menue -->
+    <header class="main-header">
+       <ul>
+        <li><img class="restaurant" src="/images/restaurant.jpg" alt="" onmouseover='hoVermeal()'  onmouseout="removeAll()"></li>
+        <li><img class="cruise" src="/images/cruise.jpg" alt="" onmouseover="hoVerboat()" onmouseout="removeAll()"></li>
+           <li class="car"><img class="auto" src="/images/auto.jpg" alt="" onmouseover="hoVercars()"  onmouseout="removeAll()"></li> 
+       </ul>
+    </header> 
+      <div class="overlay"></div>    
+
+      <!-- Partners description -->
+      <div id="cars">
+        <h4>Luxury Cars</h4>
+            <p id="desc">Relax on the road with a luxury <br> rental car include leather seats, <br> 6-8 cylinder performance and <br> plenty of room for passengers <br> and luggage.</p>
+      </div>
+   
+      <div id="boat">
+        <h3>Cruise travel</h3>
+          <p id="desc3">Designed for those who delight<br> in the   thrill  of  discovery while <br>indulging mind  and body  in <br>the most lavish surrounding <br> imaginable of your travel journey</p>
+         </div>
+    
+      <div id="meal">
+          <h3>Food & Drinks</h3>
+       <p id="desc4">Get ready to eat, drink from <br> the famous cuisine of each <br> destination, LetsGo is a <br> playground  of culture <br> and cuisine</p>
+       </div>
+<!-- Styling-Cointainers -->
+        
+     <!-- Budy Paragraph -->
+       <div class="intro">
+         <h2>We’re excited to be part of your travel experience</h2>
+         <h4>We offer everything from airfare to visa and accommodations, excursions, guided tours, special event assistance, special occasion service setups like honeymoons, and lengthy and complex, or often multi-destination.</h4>
+       </div>
+      
+<footer id="foot"><p id="cop" ><i  class="far fa-copyright"></i>
+  copyright LetsGo 2021
+ </p>
+ <script src="/js/index.js"></script>
+  
+  </script>
+</body>
+</html>

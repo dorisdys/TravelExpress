@@ -1,0 +1,33 @@
+
+extends base
+
+block content 
+
+    doctype html
+
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,700' rel='stylesheet')
+        link(rel='stylesheet' href='../css/overview.css')
+        link(rel='shortcut icon' type='image/png' href='img/favicon.png')
+        title LetsGo
+    main.main
+        .card-container
+            each package in packages 
+                .card
+                    .card__header
+                        .card__picture
+                            .card__picture-overlay &nbsp;
+                            img.card__picture-img(src=`images/${package.Img}` alt=`${package.PkgName}`)
+                        h3.heading-tertirary
+                            span= package.PkgName 
+                    .card__details
+                        p.card__text= package.PkgDesc
+                        
+                        .card__footer
+                            p
+                                span.card__footer-value='$'+ package.PkgBasePrice
+                                span.card__footer-text per person
+                            a.btn.btn--green.btn--small(href='/reservation') Book Now
+                    // End of first card

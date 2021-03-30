@@ -1,0 +1,45 @@
+
+
+block content 
+
+    doctype html
+
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='/css/login.css')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js')
+        script(src='../js/login.js')
+        title Log in
+    // Menue-Bar
+    section.menue
+        img#logo(src='../images/logo6.png' alt='')
+        p
+            span L
+            | ets
+            span G
+            | o
+        a(href='https://touch.facebook.com/' target='_blank')
+            i#facebook.fab.fa-facebook
+        a(href='https://www.instagram.com/accounts/login/' target='_blank')
+            i#instagram.fab.fa-instagram-square
+        a(href='https://twitter.com/LOGIN' target='_blank')
+            i#twiter.fab.fa-twitter
+        a(href='https://www.youtube.com/?hl=fr&gl=CA' target='_blank')
+            i#youtube.fab.fa-youtube
+        .dvs
+            a#contact(href='/') Home
+            a#gal(href='/destination') Destinations
+            a#register(href='/overview') Booking
+            a#register(href='/contact') Contact
+            a(href='/about') About
+    h1 Log in
+    form.loginfo(action='/login' method='post')
+    .em
+        label Email
+        input.email(type='email' required='' name='email')
+    .pa
+        label(for='password') Password
+        input.password(type='password' required='' name='password')
+    button.sub(type='submit') Submit

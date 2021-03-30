@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+.heading-tertirary {
+  text-transform: uppercase;
+  font-weight: 600;
+  left: 6vh;
+  top: 50vh;
+  font-size: 0.5rem;
+  text-align: right;
+  position: absolute;
+  margin-top: -2vh;
+
+  width: 70%;
+}
+.heading-tertirary span {
+  color: #130f40;
+}
+
+.btn {
+  position: absolute;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: absolute;
+
+  font-weight: 400;
+
+  border: none;
+  cursor: pointer;
+  margin-top: 14vh;
+  margin-left: 0.1vw;
+  background-color: #0984e3;
+  color: #fff;
+  margin-bottom: 10vh;
+}
+
+.card-container {
+  position: relative;
+  max-width: 120rem;
+  margin-top: -80vh;
+  margin-left: 3vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7rem;
+}
+
+.card__header {
+  position: relative;
+}
+.card__picture {
+  position: relative;
+
+  height: 28rem;
+}
+
+.card__picture-img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 70%;
+  width: 100%;
+}
+.card__details {
+  position: absolute;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr;
+  grid-row-gap: 5.75rem;
+  grid-column-gap: 2rem; */
+  padding: 0.1rem 1.5rem;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: -3rem;
+  width: 30vw;
+}
+
+.card__text {
+  color: black;
+  margin-left: -3vw;
+  width: 24vw;
+}
+.card__footer-value {
+  position: absolute;
+  position: absolute;
+  margin-top: 14.2vh;
+  margin-left: 15vw;
+  font-size: 12px;
+  color: black;
+}
+
+.card__footer-text {
+  position: absolute;
+  margin-top: 14.2vh;
+  margin-left: 17.5vw;
+  font-size: 12px;
+  color: black;
+  width: 4vw;
+}

@@ -1,0 +1,692 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menue-bar styling */
+
+#logo {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.3rem;
+  border-radius: 50%;
+  background-color: unset;
+}
+
+.dvs {
+  position: absolute;
+  left: 54%;
+  top: 1.1rem;
+}
+.dvs a {
+  padding: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #ecf0f1;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.1vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dvs a:hover {
+  background-color: #c0392b;
+  border-radius: 1.5rem;
+}
+div .social {
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+}
+
+#facebook {
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 14rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+#instagram {
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 22rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+
+#twiter {
+  position: absolute;
+  top: 1.2rem;
+  margin-left: 18rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+#youtube {
+  position: relative;
+  top: 1.2rem;
+  margin-left: 26rem;
+  font-size: 27px;
+  color: #00a8ff;
+}
+
+span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  color: #ecf0f1;
+}
+
+p {
+  position: absolute;
+  top: 1.1rem;
+  left: 4rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  color: #ecf0f1;
+  font-weight: 700;
+}
+
+.menue {
+  position: absolute;
+  margin: 0 auto 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #2980b9;
+  max-width: 100%;
+}
+
+/*End of menue bar styling  */
+
+/* Animated bar styling */
+.sideBar {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 65%;
+  background-color: #c0392b;
+  animation: line1 15s linear infinite;
+  height: 6vh;
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.sideBar p {
+  font-size: 20px;
+  margin-left: 3rem;
+  top: 0.5rem;
+  color: #ecf0f1;
+}
+/*End of animated bar styling  */
+
+/* Body styling */
+.description h1 {
+  position: absolute;
+  margin-top: 20vh;
+  color: #341f97;
+  font-size: 34px;
+  margin-left: 5vw;
+  letter-spacing: 0.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.description p {
+  color: black;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 4vh;
+  margin-top: 25vh;
+  margin-left: 1vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 0.1vw;
+  font-size: 18px;
+}
+
+/* Morocco-------------------------------------------------------------------------- */
+/* Styling Morocco-container */
+.morocco-container {
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 5vw;
+  margin-bottom: 35vh;
+
+  border-radius: 0.2rem;
+  width: 45%;
+  height: 45vh;
+}
+
+.morocco-container a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+/* Styling Morocco-container */
+
+/* Styling Morocco-image ----------------------------------------*/
+.morocco-image {
+  position: absolute;
+  left: 0rem;
+  height: 44.1vh;
+  width: 22vw;
+}
+/* End-Styling Morocco-image ------------------------------------*/
+
+/* Morocco title styling */
+.morocco-package {
+  position: absolute;
+  margin-left: 4vw;
+
+  margin-top: -2vh;
+  line-height: 4vh;
+  font-weight: 900;
+  font-size: 25px;
+  left: 18.5vw;
+  color: #2c3a47;
+  letter-spacing: 0.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Morocco title styling */
+
+/* styling Morocco findoutmore button */
+.morocco-findmore {
+  background-color: #2980b9;
+  width: 15vw;
+  font-size: 16px;
+  margin-top: 34.1vh;
+  margin-left: 26.5vw;
+  height: 10vh;
+  width: 14vw;
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: none;
+  border: transparent;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+/* Animation for cuba-button *--------------/
+ 
+/* Span Elements */
+.morocco-findmore span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(to left, #f5f6fa, #c0392b);
+  animation: line1 1s linear infinite;
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.morocco-findmore span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.2rem;
+  background-image: linear-gradient(to bottom, #f5f6fa, #c0392b);
+  animation: line2 1s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes line2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.morocco-findmore span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #f5f6fa, #c0392b);
+  animation: line3 1s linear infinite;
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.morocco-findmore span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0.2rem;
+  background-image: linear-gradient(to top, #f5f6fa, #c0392b);
+  animation: line4 1s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes line4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* End-style-Animation for morocco-button *--------------/
+/* End-styling findoutmore button */
+/* End of morocco--------------------------------------------------------------------------------------- */
+
+/*  Mexico--------------------------------------------------------------------------------------- */
+.mexico-container {
+  position: absolute;
+  margin-top: 50vh;
+  margin-left: 53vw;
+  margin-bottom: 35vh;
+
+  border-radius: 0.2rem;
+  width: 45%;
+  height: 45vh;
+}
+
+.mexico-container a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+/* Styling Morocco-container */
+
+/* Styling Mexico-image ----------------------------------------*/
+.mexico-image {
+  position: absolute;
+  left: 0rem;
+  height: 44.1vh;
+  width: 22vw;
+}
+/* End-Styling Mexico-image ------------------------------------*/
+
+/* Mexico title styling */
+.mexico-package {
+  position: absolute;
+  margin-left: 4vw;
+
+  margin-top: -2vh;
+  line-height: 4vh;
+  font-weight: 900;
+  font-size: 25px;
+  left: 18.5vw;
+  color: #2c3a47;
+  letter-spacing: 0.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Mexico button */
+/* Button */
+.mexico-findmore {
+  position: absolute;
+
+  margin: rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #2980b9;
+
+  width: 15vw;
+  font-size: 14px;
+  margin-top: 34.1vh;
+  margin-left: 25vw;
+  height: 10vh;
+  width: 14vw;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.mexico-findmore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border-top: 0.2rem solid #ecf0f1;
+  border-left: 0.2rem solid #ecf0f1;
+  transition: all 0.45s ease-in-out;
+}
+
+.mexico-findmore:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.mexico-findmore::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1rem;
+  width: 1rem;
+  border-right: 0.2rem solid #ecf0f1;
+  border-bottom: 0.2rem solid #ecf0f1;
+  transition: all 0.45s ease-in-out;
+}
+
+.mexico-findmore:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* End of Mexico--------------------------------------------------------------------------------------- */
+
+/*  Jamaica--------------------------------------------------------------------------------------- */
+.jamaica-container {
+  position: absolute;
+  margin-top: 110vh;
+  margin-left: 5vw;
+  margin-bottom: 35vh;
+
+  border-radius: 0.2rem;
+  width: 45%;
+  height: 45vh;
+}
+
+.jamaica-container a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+/* Styling Morocco-container */
+
+/* Styling Jamaica-image ----------------------------------------*/
+.jamaica-image {
+  position: absolute;
+  left: 0rem;
+  height: 44.1vh;
+  width: 22vw;
+}
+/* End-Styling Mexico-image ------------------------------------*/
+
+/* Jamaica title styling */
+.jamaica-package {
+  position: absolute;
+  margin-left: 4vw;
+
+  margin-top: -2vh;
+  line-height: 4vh;
+  font-weight: 900;
+  font-size: 25px;
+  left: 18.5vw;
+  color: #2c3a47;
+  letter-spacing: 0.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Jamaica button */
+/* Button */
+.jamaica-findmore {
+  position: absolute;
+
+  margin: rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #2980b9;
+
+  width: 15vw;
+  font-size: 14px;
+  margin-top: 34.1vh;
+  margin-left: 25vw;
+  height: 10vh;
+  width: 14vw;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.jamaica-findmore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  border-top: 0.2rem solid #ffb142;
+  border-left: 0.2rem solid #ffb142;
+  transition: all 0.45s ease-in-out;
+}
+
+.jamaica-findmore:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.jamaica-findmore::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 1rem;
+  width: 1rem;
+  overflow: hidden;
+  border-right: 0.2rem solid #ffb142;
+  border-bottom: 0.2rem solid #ffb142;
+  transition: all 0.45s ease-in-out;
+}
+
+.jamaica-findmore:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+/* End of Jamaica--------------------------------------------------------------------------------------- */
+
+/* Egypt-------------------------------------------------------------------------- */
+/* Styling Egypt-container */
+.egypt-container {
+  position: absolute;
+  margin-top: 110vh;
+  margin-left: 53vw;
+  margin-bottom: 35vh;
+
+  border-radius: 0.2rem;
+  width: 45%;
+  height: 45vh;
+}
+
+.egypt-container a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+/* Styling Egypt-container */
+
+/* Styling Egypt-image ----------------------------------------*/
+.egypt-image {
+  position: absolute;
+  left: 0rem;
+  height: 44.1vh;
+  width: 22vw;
+}
+/* End-Styling Egypt-image ------------------------------------*/
+
+/* Egypt title styling */
+.egypt-package {
+  position: absolute;
+  margin-left: 4vw;
+
+  margin-top: -2vh;
+  line-height: 4vh;
+  font-weight: 900;
+  font-size: 25px;
+  left: 18.5vw;
+  color: #2c3a47;
+  letter-spacing: 0.3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* Egypt title styling */
+
+/* styling Egypt findoutmore button */
+.egypt-findmore {
+  background-color: #2980b9;
+  width: 15vw;
+  font-size: 16px;
+  margin-top: 34.1vh;
+  margin-left: 26.5vw;
+  height: 10vh;
+  width: 14vw;
+  border-radius: 0.5rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: none;
+  border: transparent;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  position: absolute;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+/* Animation for Egypt-button *--------------/
+ 
+/* Span Elements */
+.egypt-findmore span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(to left, #3d3d3d, #ff3838);
+  animation: line1 1s linear infinite;
+}
+
+@keyframes line1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.egypt-findmore span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0.2rem;
+  background-image: linear-gradient(to bottom, #3d3d3d, #ff3838);
+  animation: line2 1s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes line2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.egypt-findmore span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0.2rem;
+  width: 100%;
+  background-image: linear-gradient(to right, #3d3d3d, #ff3838);
+  animation: line3 1s linear infinite;
+}
+
+@keyframes line3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.egypt-findmore span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 0.2rem;
+  background-image: linear-gradient(to top, #3d3d3d, #ff3838);
+  animation: line4 1s linear infinite;
+  animation-delay: 1.5s;
+}
+
+@keyframes line4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* End-style-Animation for Egypt-button *--------------/
+/* End-styling findoutmore button */
+/* End of Egypt--------------------------------------------------------------------------------------- */
+
+.partners {
+  position: absolute;
+  margin-top: 170vh;
+  margin-left: 8vw;
+}
+
+#foot {
+  position: absolute;
+
+  width: 100%;
+}
+
+#cop {
+  left: 5vw;
+  color: dimgray;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 185vh;
+}
