@@ -1,2 +1,2 @@
 # TravelExpress
-Please, use vscode and open Team1-Project
+Please, use VScode and open Team1-Project
